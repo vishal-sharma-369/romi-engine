@@ -1,0 +1,89 @@
+.pie {
+    width: 18rem;
+    height: 18rem;
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.pie:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(#0598fa calc(94 * 1%), #0000 0),
+        conic-gradient(#5c0af5 calc(100 * 1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - 10%), #000 calc(100% - 10%));
+}
+
+.token-card {
+    display: flex;
+    border: 1px solid #4d4d4e;
+    padding: 1.5rem 1.5rem 1.86rem;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    background-color: #151515;
+    position: relative;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.token-info-card {
+    align-self: start;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.token-info-categories {
+    display: flex;
+}
+
+.stake-title {
+    color: #a9a9b0;
+}
+
+.token-category {
+    padding-top: 2rem;
+}
+
+.token-category#token,
+.token-category#pool,
+.token-category#weight {
+    flex-grow: 1;
+}
+
+.stake-card-row .label {
+    color: #efefef;
+}
+
+.token-category .stake-card-row {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-block: 1.6rem;
+}
+
+.token-col svg {
+    height: 1.6rem;
+    fill: #efefef;
+}
+
+.token-card-title {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.token-card-title img {
+    height: 1.6rem;
+    margin-left: 0.8rem;
+}

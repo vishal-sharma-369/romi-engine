@@ -1,0 +1,68 @@
+.home-container {
+    margin-inline: 25rem;
+}
+
+.button-filled {
+    background-color: #3eb489;
+    line-height: 3.6rem;
+    padding-inline: 1.6rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-filled:hover {
+    background-color: #207a59;
+}
+
+.button-outlined {
+    border: 1px solid hsla(0, 0%, 100%, 0.1607843137254902);
+    color: white;
+    padding-inline: 1.6rem;
+    line-height: 3.6rem;
+    outline: none;
+    border-radius: 4px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.button-outlined svg {
+    fill: white;
+    height: 1.6rem;
+}
+
+.button-outlined:has(#ethereum-icon) {
+    padding-inline-start: 0.8rem;
+}
+
+#ellipsis,
+#wallet,
+#ethereum-icon {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#ethereum-icon {
+    background-color: white;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#ethereum-icon svg {
+    fill: black;
+}
+
+.button-outlined hr {
+    height: 60%;
+    color: hsla(0, 1%, 66%, 0.161);
+}
+
+.button-outlined:hover {
+    background-color: hsla(0, 0%, 93.3%, 0.0784313725490196);
+}

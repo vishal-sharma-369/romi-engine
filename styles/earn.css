@@ -1,0 +1,87 @@
+.earn-container {
+    margin-inline: 24rem;
+    padding-block: 4.8rem;
+}
+
+.page-title {
+    color: white;
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.page-description {
+    color: rgb(204, 204, 204);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.page-description a {
+    color: inherit;
+}
+
+.stake-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.stake-card {
+    border: 1px solid #4d4d4e;
+    padding: 1.5rem 1.5rem 1.86rem;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    background-color: #151515;
+    position: relative;
+}
+
+.stake-card-title {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stake-card-rows-container {
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+}
+
+.stake-card .divider {
+    margin-top: auto;
+}
+
+.stake-card-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 1.5rem;
+    padding: unset;
+    margin-block: 1rem;
+}
+
+.label,
+.price {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.stake-card hr {
+    border: 1px solid #4d4d4e;
+}
+
+.stake-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.stake-button {
+    margin-block-start: 1.6rem;
+    max-width: fit-content;
+}
