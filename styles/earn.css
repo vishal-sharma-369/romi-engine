@@ -1,5 +1,6 @@
 .earn-container {
-    margin-inline: 24rem;
+    width: 80%;
+    margin-inline: auto;
     padding-block: 4.8rem;
 }
 
@@ -84,4 +85,16 @@
 .stake-button {
     margin-block-start: 1.6rem;
     max-width: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+    .stake-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .earn-container {
+        width: 95%;
+    }
 }
