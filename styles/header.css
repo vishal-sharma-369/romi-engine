@@ -25,6 +25,19 @@
     color: white;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#menu-icon {
+    fill: rgb(180, 180, 180);
+    height: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 .logo img {
     height: 4.8rem;
 }
@@ -32,4 +45,68 @@
 .buttons {
     display: flex;
     gap: 2.4rem;
+}
+
+.drawer {
+    background: rgba(25, 25, 25, 0.6392156863) 0 0 no-repeat padding-box;
+    box-shadow: 0.8rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1607843137);
+    opacity: 1;
+    backdrop-filter: blur(2.7rem);
+    position: fixed;
+    z-index: 801;
+    inset-inline: -31rem;
+    inset-block-start: 0;
+    height: 100vh;
+    width: 30.4rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+    transition: all 200ms;
+}
+
+.drawer-show {
+    inset-inline: 0;
+}
+
+.drawer-link {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    color: #fff;
+    padding: 1.5rem 1.6rem;
+    text-decoration: none;
+    display: block;
+}
+
+.drawer-link:hover {
+    background: rgba(149, 152, 174, 0.1411764706);
+}
+
+.drawer-header {
+    height: 6.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.6rem;
+}
+
+.drawer-header img {
+    height: 4rem;
+}
+
+#drawer-cross {
+    height: 1.6rem;
+    fill: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .navigator .link {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
 }
