@@ -10,3 +10,24 @@ Array.from(navigation_links).forEach((link) => {
         link.style.color = "white"
     }
 })
+
+// Handling the drawer opening and closing functionality
+const closeButton = document.getElementById("drawer-cross")
+const menuIcon = document.getElementById("menu-icon")
+const drawer = document.getElementsByClassName("drawer")[0]
+
+function openDrawer(drawer) {
+    drawer.classList.add("drawer-show")
+}
+
+function closeDrawer(drawer) {
+    drawer.classList.remove("drawer-show")
+}
+
+menuIcon.addEventListener("click", (e) => {
+    openDrawer(drawer)
+})
+
+closeButton.addEventListener("click", (e) => {
+    closeDrawer(drawer)
+})

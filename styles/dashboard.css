@@ -1,3 +1,9 @@
+.dashboard-container {
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 4.8rem;
+}
+
 .pie {
     width: 18rem;
     height: 18rem;
@@ -86,4 +92,16 @@
 .token-card-title img {
     height: 1.6rem;
     margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 1048px) {
+    .stake-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .dashboard-container {
+        width: 95%;
+    }
 }
